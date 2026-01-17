@@ -134,6 +134,12 @@ h1{
     color: #EAF4FB;
 }
 
+.skill-box{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
 .skill-icon{
     display: flex;
     flex-direction: column;
@@ -144,4 +150,8 @@ h1{
 .skill-icon img {
     width: 80px;
     height: 80px;
+}
+
+.skill-details{
+    color: #EAF4FB;
 }
