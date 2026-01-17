@@ -1,0 +1,147 @@
+
+body{
+    background-color: #EAF4FB;
+    margin: 0;
+}
+
+header{
+    background-color: #060D12;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.logo img {
+  height: 80px; /* or any size you want */
+  width: auto;
+}
+
+h1{
+    color: #A9C2D1;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(113, 111, 114);
+    font-size: 18px;
+}
+
+ul {
+  /* this removes the dots on the list items*/
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+  margin-right: 16px;
+  padding: 0;
+  gap: 16px;
+}
+
+h1{
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.left-content{
+    flex-basis: 35%;
+    background-color: #020406;
+    overflow: hidden; 
+    position: relative;
+}
+
+.left-content img {
+  height: 100%;
+  width: auto;
+  max-width: none;
+  transform: translateX(-50%);
+  object-fit: cover;
+  overflow: hidden;      /* crops bottom */
+  position: relative;
+}
+
+.right-content{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 65%;
+}
+
+.story{
+    display: flex;
+    flex-direction: column;
+    background-color: #0B1F2A;
+    padding: 16px;
+}
+
+.story h2{
+    color: #EAF4FB;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.story p{
+    display: block;
+    color: #A9C2D1;
+    padding: 0 200px 0 200px;
+    margin-left: 5px;
+    position: relative;
+    text-align: justify;
+    font-size: 20px;
+    border-left: 3px solid #5897fe;
+}
+
+
+.story p::before { /* quotation mark before paragraph */
+    content: '“';
+    display: block;
+    font-family: 'serif';
+    font-size: 50px;
+    line-height: 1em;
+    margin: 0 0 -20px -20px;
+    color: #5897fe;
+}
+
+.story p::after { /* quotation mark after paragraph */
+    content: '”';
+    display: block;
+    font-family: 'serif';
+    font-size: 50px;
+    line-height: 1em;
+    margin: 0 -20px -10px 0;
+    float: right;
+    color: #5897fe;
+}
+
+.skills{
+    display: flex;
+    flex-direction: column;
+    background-color: #132C3A;
+    padding: 16px;
+    border: #41455a 2px solid;
+}
+
+.skills h2{
+    color: #EAF4FB;
+}
+
+.skill-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: #41455a 2px solid;
+}
+
+.skill-icon img {
+    width: 80px;
+    height: 80px;
+}
